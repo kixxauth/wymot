@@ -1,0 +1,22 @@
+{
+  "name": "wymot",
+  "version": "0.0.1",
+  "description": "What You Missed On Twitter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/obfuscode/wymot.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/obfuscode/wymot/issues"
+  },
+  "homepage": "https://github.com/obfuscode/wymot",
+  "dependencies": {
+    "ntwitter": "~0.5.0"
+  }
+}
