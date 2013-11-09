@@ -2,7 +2,7 @@ User Stream
 ===========
 
 ## Friends List
-The first data structure passed to the stream consumer by Twitter is the
+The first data structure passed by Twitter to the stream consumer is the
 friends list for the authenticated Twitter user:
 
 ```JSON
@@ -44,8 +44,10 @@ friends list for the authenticated Twitter user:
 It's passed to the callback as soon as the connection is made to the stream.
 
 ## Updates (Tweets)
-After the friends list is sent, it is followed by updates from the users that
-the authenticated Twitter user follows. Each update looks something like this:
+
+After the friends list is sent, updates (tweets) from the users that the
+authenticated Twitter user follows are sent on the open stream. Each update
+looks something like this:
 
 ```JSON
 {
