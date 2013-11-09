@@ -4,6 +4,10 @@ BASE="$(cd `dirname "$0"` && pwd)"
 main () {
     local cmd="$1"
     case $cmd in
+        'run')
+            shift
+            run_console "$@"
+            ;;
         'setup')
             shift
             setup "$@"
@@ -21,6 +25,9 @@ main () {
 Exiting without running any operations.
 Possible operations include:
 
+  run - Run the console app (prints to console)
+    Usage: ./manage.sh run
+
   setup - Install dependencies.
     Usage: ./manage.sh setup
 
@@ -32,6 +39,11 @@ Possible operations include:
             "
             ;;
     esac
+}
+
+run_console () {
+    echo "Press CTRL-C to quit."
+    node "$BASE/index.js"
 }
 
 setup () {
