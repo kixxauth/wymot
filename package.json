@@ -18,5 +18,9 @@
   "homepage": "https://github.com/obfuscode/wymot",
   "dependencies": {
     "ntwitter": "~0.5.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.14.0",
+    "should": "~2.0.2"
   }
 }
